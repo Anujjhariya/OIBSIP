@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+img {
+    height: 100vh;
+    width: 100%;
+    /* margin-left: 65%; */
+    /* margin-top: 1%; */
+    /* border-radius: 2% 40% /20% 80%; */
+    /* border-radius: 50% 50% /50% 50%; */
+    /* background-image: url(img/background.png); */
+    background-size: cover;
+    background-position: right;
+}
+
+.first-heading {
+
+    position: relative;
+    right: 500px;
+    top: -10px;
+    width: 50px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg1.jpg);
+    background-size: cover;
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(246, 243, 149, 0.45);
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 30px;
+    color: rgb(2, 2, 2);
+    margin-left: 130px;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav>.nav-links>a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav>.nav-links>a:hover {
+    border-radius: 40%;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+/* 
+@media (max-width:1100px){
+
+
+    img{
+        position: relative;
+    height: 55vh;
+    width: 45%;
+    margin-left: 55%;
+    margin-top: 10%;
+   
+    border-radius: 50% 50% /50% 50%;
+    background-size: contain;
+    background-position:right;
+}
+} */
+
+@media (max-width:600px) {
+
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+
+
+    img {
+        position: relative;
+        height: 50vh;
+        width: 50%;
+        margin-left: 500px;
+        margin-top: 20%;
+
+        border-radius: 50% 50% /50% 50%;
+        background-size: contain;
+        background-position: right;
+    }
+}
+
+
+
+
+.btn {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: gold;
+    border: 2px solid goldenrod;
+}
+
+.btn:hover {
+    background: rgba(43, 8, 70, 0.2);
+    border-color: goldenrod;
+    color: gold;
+}
+
+.content {
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+
+.content .title {
+    color: #a9a9b2;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #c8bc10 20.69%, #d0ff44 50.19%,
+            #f07f0e 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content h1 {
+    color: #dbdbdd;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 50%;
+}
+
+.content h1 span {
+    color: gold;
+}
+
+.content p {
+    width: 55%;
+    color: #d9d6d6;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about {
+    background-color: black;
+    /* position: relative; */
+    position: absolute;
+    width: 100%;
+    margin-top: 150px;
+    /* margin-left: 100px; */
+    min-height: 65vh;
+    /* border-radius: 5px 150px 10px 50px; */
+    /* top: 0px; */
+
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: rgb(253, 249, 249);
+    transform: translateX(-50%);
+
+
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    font-size: 22px;
+    color: gold;
+    padding: 0 5px;
+    background: rgb(3, 3, 3);
+    transform: translateX(-50%);
+
+}
+
+.about .title::after {
+    content: "who i am";
+    font-weight: 600;
+
+}
+
+.about .about-content .left {
+    width: 5%;
+    margin-top: 50px;
+
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: -150px;
+    margin-left: 200px;
+}
+
+.about .about-content .right {
+    width: 52%;
+    margin-top: -15px;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.about .about-content .right .text span {
+    color: gold;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+    width: 85%;
+    margin-left: 0px;
+    font-size: 18px;
+    color: white;
+}
+
+
+.about .about-content .right a {
+    display: inline-block;
+    background: gold;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 2px solid goldenrod;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: gold;
+    background: rgba(117, 20, 220, 0.1);
+}
